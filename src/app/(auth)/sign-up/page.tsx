@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { redirect } from "next/navigation";
 import Link from "next/link";
 import { GithubSignIn } from "@/components/github-sign-in";
+import { GoogleSignIn } from "@/components/google-sign-in";
 import { auth } from "@/lib/auth";
 
 const Page = async () => {
@@ -15,6 +16,7 @@ const Page = async () => {
       <h1 className="text-2xl font-bold text-center mb-6">Create Account</h1>
 
       <GithubSignIn />
+      <GoogleSignIn />
 
       <div className="relative">
         <div className="absolute inset-0 flex items-center">
